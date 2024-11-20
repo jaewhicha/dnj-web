@@ -55,31 +55,21 @@ export default function NavBar() {
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button variant="text" color="info" size="small">
-                Features
+                About
               </Button>
               <Button variant="text" color="info" size="small">
-                Testimonials
+                Recipes
               </Button>
               <Button variant="text" color="info" size="small">
-                Highlights
+                Guest Book
               </Button>
               <Button variant="text" color="info" size="small">
-                Pricing
+                Contact
               </Button>
-              <Button
-                variant="text"
-                color="info"
-                size="small"
-                sx={{ minWidth: 0 }}
-              >
-                FAQ
+              <Button variant="text" color="info" size="small">
+                Pictures
               </Button>
-              <Button
-                variant="text"
-                color="info"
-                size="small"
-                sx={{ minWidth: 0 }}
-              >
+              <Button variant="text" color="info" size="small">
                 Blog
               </Button>
             </Box>
@@ -91,10 +81,22 @@ export default function NavBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small">
+            <Button
+              color="primary"
+              variant="text"
+              size="small"
+              component={Link}
+              to="/sign-in"
+            >
               Sign in
             </Button>
-            <Button color="primary" variant="contained" size="small">
+            <Button
+              color="primary"
+              variant="contained"
+              size="small"
+              component={Link}
+              to="/sign-up"
+            >
               Sign up
             </Button>
             <ColorModeIconDropdown />
@@ -125,22 +127,36 @@ export default function NavBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
+                <MenuItem>About</MenuItem>
+                <MenuItem>Recipes</MenuItem>
+                <MenuItem>Guest Book</MenuItem>
+                <MenuItem>Contact</MenuItem>
+                <MenuItem>Pictures</MenuItem>
                 <MenuItem>Blog</MenuItem>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
-                  <Link prefetch="none" to="/sign-up">
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    fullWidth
+                    prefetch="none"
+                    component={Link}
+                    to="/sign-up"
+                  >
                     Sign up
-                  </Link>
+                  </Button>
                 </MenuItem>
                 <MenuItem>
-                  <Link prefetch="none" to="/sign-in">
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    fullWidth
+                    prefetch="none"
+                    component={Link}
+                    to="/sign-in"
+                  >
                     Sign in
-                  </Link>
+                  </Button>
                 </MenuItem>
               </Box>
             </Drawer>
