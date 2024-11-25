@@ -55,13 +55,16 @@ export default function NavBar() {
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button variant="text" color="info" size="small">
+                Home
+              </Button>
+              <Button variant="text" color="info" size="small">
                 About
               </Button>
               <Button variant="text" color="info" size="small">
                 Recipes
               </Button>
               <Button variant="text" color="info" size="small">
-                Guest Book
+                Guestbook
               </Button>
               <Button variant="text" color="info" size="small">
                 Contact
@@ -127,9 +130,10 @@ export default function NavBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
+                <MenuItem>Home</MenuItem>
                 <MenuItem>About</MenuItem>
                 <MenuItem>Recipes</MenuItem>
-                <MenuItem>Guest Book</MenuItem>
+                <MenuItem>Guestbook</MenuItem>
                 <MenuItem>Contact</MenuItem>
                 <MenuItem>Pictures</MenuItem>
                 <MenuItem>Blog</MenuItem>

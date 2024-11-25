@@ -193,7 +193,7 @@ export default function MainContent() {
           Blog
         </Typography>
         <Typography>
-          Stay in the loop with the latest about our products
+          Stay in the loop with the latest of what we're about
         </Typography>
       </div>
       <Box
