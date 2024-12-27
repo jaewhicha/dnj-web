@@ -64,6 +64,9 @@ export default function NavBar() {
                 Recipes
               </Button>
               <Button variant="text" color="info" size="small">
+                Blog
+              </Button>
+              <Button variant="text" color="info" size="small">
                 Guestbook
               </Button>
               <Button variant="text" color="info" size="small">
@@ -71,9 +74,6 @@ export default function NavBar() {
               </Button>
               <Button variant="text" color="info" size="small">
                 Pictures
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Blog
               </Button>
             </Box>
           </Box>
@@ -133,10 +133,10 @@ export default function NavBar() {
                 <MenuItem>Home</MenuItem>
                 <MenuItem>About</MenuItem>
                 <MenuItem>Recipes</MenuItem>
+                <MenuItem>Blog</MenuItem>
                 <MenuItem>Guestbook</MenuItem>
                 <MenuItem>Contact</MenuItem>
                 <MenuItem>Pictures</MenuItem>
-                <MenuItem>Blog</MenuItem>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
                   <Button

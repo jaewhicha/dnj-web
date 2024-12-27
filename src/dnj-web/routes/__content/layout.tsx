@@ -3,7 +3,7 @@ import { Outlet } from '@modern-js/runtime/router';
 
 import { Container, CssBaseline } from '@mui/material';
 import Footer from '@shared/components/Footer';
-import AppAppBar from '@shared/components/NavBar';
+import NavBar from '@shared/components/NavBar';
 import AppTheme from '@shared/theme/AppTheme';
 
 export default function Layout() {
@@ -20,7 +20,7 @@ export default function Layout() {
       <AppTheme>
         <CssBaseline enableColorScheme />
 
-        <AppAppBar />
+        <NavBar />
         <Container
           maxWidth="lg"
           component="main"

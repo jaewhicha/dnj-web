@@ -16,7 +16,20 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import * as React from 'react';
 
-const cardData = [
+type CardData = {
+  img: string;
+  tag: string;
+  title: string;
+  description: string;
+  authors: Author[];
+};
+
+type Author = {
+  name: string;
+  avatar: string;
+};
+
+const cardData: CardData[] = [
   {
     img: 'https://picsum.photos/800/450?random=1',
     tag: 'Engineering',
