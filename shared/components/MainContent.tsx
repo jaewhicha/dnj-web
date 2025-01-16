@@ -29,6 +29,7 @@ type Author = {
   avatar: string;
 };
 
+// TODO: replace with fetch from Contentful
 const cardData: CardData[] = [
   {
     img: 'https://picsum.photos/800/450?random=1',

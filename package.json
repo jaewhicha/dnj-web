@@ -11,7 +11,8 @@
     "lint": "biome check",
     "prepare": "simple-git-hooks",
     "upgrade": "modern upgrade",
-    "deploy": "modern deploy"
+    "deploy": "modern deploy",
+    "clean": "npx rimraf dist .output"
   },
   "engines": {
     "node": ">=16.18.1"
@@ -28,7 +29,7 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.1.0",
-    "@modern-js/runtime": "2.62.0",
+    "@modern-js/runtime": "2.63.4",
     "@mui/icons-material": "^6.1.7",
     "@mui/material": "^6.1.7",
     "react": "^18.3.1",
@@ -36,8 +37,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@modern-js/app-tools": "2.62.0",
-    "@modern-js/tsconfig": "2.62.0",
+    "@modern-js/app-tools": "2.63.4",
+    "@modern-js/tsconfig": "2.63.4",
     "@rsbuild/plugin-node-polyfill": "^1.2.0",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
